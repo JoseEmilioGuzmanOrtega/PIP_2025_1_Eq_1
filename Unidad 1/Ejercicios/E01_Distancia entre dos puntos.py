@@ -2,7 +2,7 @@ import sys
 from PyQt5 import uic, QtWidgets
 import math
 
-qtCreatorFile = "P05_Distancia entre dos puntos.ui"
+qtCreatorFile = "E01_Distancia entre dos puntos.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):

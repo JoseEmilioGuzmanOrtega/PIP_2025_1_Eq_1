@@ -1,7 +1,7 @@
 #import sys
 #from PyQt5 import uic, QtWidgets
 
-#qtCreatorFile = "P011_TablaDeMultiplicar.ui"
+#qtCreatorFile = "E06_TablaDeMultiplicar.ui"
 #UI_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 #class MyApp(QtWidgets.QMainWindow, UI_MainWindow):

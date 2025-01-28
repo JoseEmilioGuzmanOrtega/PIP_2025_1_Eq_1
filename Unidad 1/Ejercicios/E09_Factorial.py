@@ -1,7 +1,8 @@
+import math
 import sys
 from PyQt5 import uic, QtWidgets
 
-qtCreatorFile = "P08_Areas de un pentagono.ui"
+qtCreatorFile = "E09_Factorial.ui"
 UI_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, UI_MainWindow):
@@ -9,15 +10,13 @@ class MyApp(QtWidgets.QMainWindow, UI_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         UI_MainWindow.__init__(self)
         self.setupUi(self)
-        self.btn_calcular.clicked.connect(self.area)
+        self.btn_boton.clicked.connect(self.factorial)
 
-    def area(self):
+    def factorial(self):
         try:
-            l = float(self.txt_longitud.text())
-            ap = float(self.txt_apotema.text())
-            p = l*5
-            area = (1/2)*p*ap
-            self.mensaje("El Area del Pentagono es  "+str(area))
+            numero = int(self.txt_num.text())
+            resultado=math.factorial(numero)
+            self.mensaje(f"El Factorial de {numero} es: "+str(resultado))
         except Exception as error:
             print(error)
 
@@ -31,4 +30,3 @@ if __name__ == "__main__":
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
-

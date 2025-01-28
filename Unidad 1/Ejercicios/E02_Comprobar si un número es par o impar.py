@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic, QtWidgets
 
-qtCreatorFile = "P09_Mayor de edad.ui"
+qtCreatorFile = "E02_Comprobar si un número es par o impar.ui"
 UI_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, UI_MainWindow):
@@ -9,22 +9,20 @@ class MyApp(QtWidgets.QMainWindow, UI_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         UI_MainWindow.__init__(self)
         self.setupUi(self)
-        self.btn_calcular.clicked.connect(self.edad )
+        self.btn_revisar.clicked.connect(self.par)
 
-    def edad(self):
+    def par(self):
         try:
-            edad = float(self.txt_edad.text())
-            if 18 < edad:
-                self.mensaje ("Es Mayor de Edad")
+            num = float(self.txt_numero.toPlainText())
+            if num % 2 == 0:
+                self.msg("El Número es Par.")
             else:
-              self.mensaje ("No es Mayor de Edad")
+                self.msg("El Número No es Par.")
+        except ValueError:
+            self.msg("Por favor Ingresa un Número Válido.")
 
-
-        except Exception as error:
-            print(error)
-
-    def mensaje(self, txt):
-        m=QtWidgets.QMessageBox()
+    def msg(self, txt):
+        m = QtWidgets.QMessageBox()
         m.setText(txt)
         m.exec_()
 
@@ -33,4 +31,3 @@ if __name__ == "__main__":
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
-
