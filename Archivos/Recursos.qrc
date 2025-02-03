@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Fotos">
+    <file>mew.jpg</file>
+  </qresource>
+</RCC>
