@@ -190,9 +190,9 @@ color: white;</string>
   <widget class="QLabel" name="labelResultado">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>240</y>
-     <width>231</width>
+     <width>291</width>
      <height>41</height>
     </rect>
    </property>

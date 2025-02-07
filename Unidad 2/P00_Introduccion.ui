@@ -48,6 +48,12 @@ background-image: url(:/Logos/Captura de pantalla 2025-01-11 221110.png);</strin
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Recursos.qrc">:/Fotos/mew.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

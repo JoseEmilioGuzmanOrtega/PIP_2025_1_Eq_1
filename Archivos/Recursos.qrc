@@ -1,5 +1,20 @@
 <RCC>
   <qresource prefix="Fotos">
+    <file>angelito.jpg</file>
+    <file>buenosdias.jpg</file>
+    <file>celinemuerta.jpg</file>
+    <file>dennisse.jpg</file>
+    <file>fondoatardecer.png</file>
+    <file>fondonoche.jpeg</file>
+    <file>goyo.jpg</file>
+    <file>kirby buchon.jpg</file>
+    <file>logofacultad.jpg</file>
+    <file>logoUAT.jpg</file>
     <file>mew.jpg</file>
+    <file>pato.jpg</file>
+    <file>pikachu.jpg</file>
+    <file>raton.jpg</file>
+    <file>santo.jpg</file>
+    <file>yoshi.jpg</file>
   </qresource>
 </RCC>
