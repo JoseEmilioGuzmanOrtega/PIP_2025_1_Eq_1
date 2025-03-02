@@ -26,13 +26,20 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             8: [":/Fotos/goyo.jpg", "goyo"],
             9: [":/Fotos/buenosdias.jpg", "buenosdias"]
         }
+        nombre = self.datosImagenes[0][1]
+        self.txt_nombre_imagen.setText(nombre)
 
         #Area de los Slots
     def cambiarValor(self):
-        valor = self.selector_imagen.value()
-        imagen_ruta = self.datosImagenes[valor][0]
-        self.imagen.setPixmap(QtGui.QPixmap(imagen_ruta))
-        print(valor)
+        try:
+            valor = self.selector_imagen.value()
+            imagen_ruta = self.datosImagenes[valor][0]
+            self.imagen.setPixmap(QtGui.QPixmap(imagen_ruta))
+            nombre = self.datosImagenes[valor][1]
+            self.txt_nombre_imagen.setText(nombre)
+            print(valor)
+        except Exception as error:
+            print(error)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
