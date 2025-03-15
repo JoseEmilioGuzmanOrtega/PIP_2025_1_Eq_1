@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="simondice">
+    <file>angelito.jpg</file>
+    <file>kirby buchon.jpg</file>
+    <file>raton.jpg</file>
+    <file>santo.jpg</file>
+  </qresource>
+</RCC>
